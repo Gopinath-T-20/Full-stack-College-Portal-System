@@ -25,7 +25,7 @@ public class AdmissionController {
             @RequestParam("marksheet") MultipartFile marksheet) {
 
         try {
-            // uploads folder illana create pannuvom
+
             Path uploadPath = Paths.get(UPLOAD_DIR);
             if (!Files.exists(uploadPath)) {
                 Files.createDirectories(uploadPath);

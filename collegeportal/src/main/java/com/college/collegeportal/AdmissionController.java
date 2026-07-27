@@ -15,7 +15,6 @@ public class AdmissionController {
     @Autowired
     private AdmissionRepository admissionRepository;
 
-    // uploads folder path - project root-la 'uploads' folder create aagum
     private final String UPLOAD_DIR = "uploads/";
 
     @PostMapping("/apply")
@@ -32,12 +31,12 @@ public class AdmissionController {
                 Files.createDirectories(uploadPath);
             }
 
-            // File-ah save pannuradhu
+            // TO SAVE FILE
             String filename = marksheet.getOriginalFilename();
             Path filePath = uploadPath.resolve(filename);
             Files.copy(marksheet.getInputStream(), filePath, StandardCopyOption.REPLACE_EXISTING);
 
-            // Database-la save pannuradhu
+            // SAVE FILE IN DB
             Admission admission = new Admission();
             admission.setStudent(studentName);
             admission.setDepartment(department);

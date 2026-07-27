@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hindusthan College of Technology</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navbar -->
+<header>
+    <nav class="navbar">
+        <div class="logo">Hindusthan College Of Technology</div>
+        <ul class="nav-links">
+            <li><a href="#login-section">Login</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#academics-section">Academics</a></li>
+            <li><a href="#admission-section">Admission</a></li>
+            <li><a href="#examination-section">Examination</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!--Alumni Login / Register-->
+<section id="login-section" class="fade">
+    <center>
+        <form id="alumniForm">
+            <h1>Alumni Login</h1><br><br>
+
+            <label>Name : </label>
+            <input type="text" id="a_name" placeholder=" Enter your Name" required><br><br>
+
+            <label>Date of Birth : </label>
+            <input type="date" id="a_dob" required><br><br>
+
+            <label> Select Department : </label>
+            <select id="a_dept" required>
+                <option value="">SELECT</option>
+                <option value="MECHANICAL">MECHANICAL</option>
+                <option value="CIVIL">CIVIL</option>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="EEE">EEE</option>
+                <option value="IT">IT</option>
+                <option value="AI & DS">AI & DS</option>
+            </select>
+            <br><br>
+
+            <label>Gender : </label>
+            <select id="a_gender" required>
+                <option value="">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <br><br>
+
+            <label>Are you willing to attend Alumni ?</label><br><br>
+            <input type="radio" name="a_attending" value="Yes" required onclick="document.getElementById('a_attending_hidden').value='Yes'"> Yes
+            <input type="radio" name="a_attending" value="No" required onclick="document.getElementById('a_attending_hidden').value='No'"> No
+            <input type="hidden" id="a_attending_hidden"><br><br>
+
+            <button type="submit"> Register </button>
+        </form>
+    </center>
+</section>
+
+<!--ABOUT US-->
+<section id="about-section" class="fade">
+    <div>
+        <h1>About</h1><br>
+        <p>
+            Hindusthan College of Technology is a premier institution focused on academic excellence, innovation, and career development.
+
+            Hindusthan College Of Technology was established in the year 2011 with a mission of creating conducive learning environment, where the students can explore new frontiers and expand their horizons enriched with professional ethics, values and can enhance their knowledge to participate in the challenges of advanced engineering fields and can make them as a good professional. The Institution has one of the best infrastructure facilities for an engineering college which facilitates the wholesome growth of students.
+
+            It boasts of 10.18 acres of lush green campus on Salem-Bangalore highway, near the Salem Airport providing the right ambience for students to pursue high level of technical education.
+
+            The calm, serene and tranquil environment invigorates the mind and provide peaceful learning environment.
+
+            The institution houses highly qualified and experienced faculty members who are dedicated to delivering quality education and mentoring students effectively. Modern laboratories equipped with advanced instruments provide hands-on learning experiences across all engineering disciplines. Regular workshops, seminars, and guest lectures by industry experts help bridge the gap between academia and industry requirements. The college also emphasizes research and innovation, encouraging students to participate in technical projects and competitions. A well-stocked library with a vast collection of books, journals, and digital resources supports academic excellence. Strong placement and training cell ensures students are well-prepared for campus recruitment drives. Soft skills and aptitude training sessions are conducted regularly to enhance employability. The campus promotes extracurricular activities, sports, and cultural events for overall personality development. Industry collaborations and internships provide real-world exposure to students. Overall, the institution focuses on producing competent, ethical, and industry-ready engineers.
+        </p>
+    </div>
+</section>
+
+<!--Academics-->
+<section id="academics-section" class="fade">
+    <div>
+        <h1>Academics</h1><br><br>
+        <h1>UG Courses</h1><br><br>
+        <p>B.E Mechanical Engineering</p>
+        <p>B.E Civil Engineering</p>
+        <p>B.E Robotics and Automation</p>
+        <p>B.E Computer Science Engineering</p>
+        <p>B.E Electic and Electrical Engineering</p>
+        <p>B.E Electrical and Electronics Engineering</p>
+        <p>B.Tech Information Technology</p>
+        <p>B.Tech Artificial Intelligence and Data Science</p><br>
+        <h1>PG Courses</h1><br><br>
+        <p>M.E CAD/CAM</p>
+        <p>M.E Communication System</p>
+        <p>MBA</p>
+    </div>
+</section>
+
+<!--Admission-->
+<section id="admission-section" class="fade">
+    <form id="admissionForm">
+        <h1>Admission Registration</h1><br><br>
+
+        <label>Name : </label>
+        <input type="text" id="student_name" placeholder=" Enter your Name" required><br><br>
+
+        <label> Select Department : </label>
+        <select id="department" required>
+            <option value="">SELECT</option>
+            <option value="MECHANICAL">MECHANICAL</option>
+            <option value="CIVIL">CIVIL</option>
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+            <option value="IT">IT</option>
+            <option value="AI & DS">AI & DS</option>
+        </select>
+        <br><br>
+
+        <label>12th Cutoff : </label>
+        <input type="text" id="cutoff" placeholder="Enter your cutoff" required><br><br>
+
+        <div class="form-group">
+            <label> Upload Marksheet : </label>
+            <input type="file" id="marksheet" required>
+        </div> <br>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</section>
+
+<!--Examination-->
+<section id="examination-section" class="fade">
+    <h1>Examination [ Results ] </h1><br><br>
+    <label>REG NO : </label>
+    <input type="text" id="reg_no" placeholder=" Enter Register Number"><br><br>
+    <label>DOB : </label>
+    <input type="text" id="exam_dob" placeholder=" Enter DOB"><br><br>
+    <button type="button" onclick="window.location.href='result_page.html'">Login</button>
+</section>
+
+<!--Contact-->
+<section id="contact-section" class="fade">
+    <div>
+        <h1>Contact Details</h1><br>
+        <p>
+            Phone : 9876543210 <br><br>
+            Email : Hindusthan@gamil.Com <br><br>
+            Address : Sikkanampatty, Omalur - 636309
+        </p>
+    </div>
+</section>
+
+<script src="js/register.js"></script>
+<script src="js/admission.js"></script>
+</body>
+</html>

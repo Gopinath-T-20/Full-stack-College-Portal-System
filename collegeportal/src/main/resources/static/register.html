@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alumni Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Alumni Registration Form</h2>
+
+<form id="alumniForm">
+    <label>Name:</label><br>
+    <input type="text" id="a_name" required><br><br>
+
+    <label>Date of Birth:</label><br>
+    <input type="date" id="a_dob" required><br><br>
+
+    <label>Department:</label><br>
+    <input type="text" id="a_dept" required><br><br>
+
+    <label>Gender:</label><br>
+    <select id="a_gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+    </select><br><br>
+
+    <label>Attending:</label><br>
+    <select id="a_attending">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+    </select><br><br>
+
+    <button type="submit">Register</button>
+</form>
+
+<script src="js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    background-color:rgb(30, 33, 80);
+    color:rgb(238, 231, 231);
+    padding: 15px;
+    display: flex;
+    font-size: x-large;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+ul{
+    margin-left: 38%;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    color: rgb(238, 231, 231);
+    margin-right: 2%;
+
+}
+
+li a:hover {
+    color: rgb(26, 192, 184);
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+section{
+    background-color: rgb(218, 218, 226);
+    margin-top: 20px;
+    box-sizing: border-box;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    background-image: url(image1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    transition: transform 0.3s ease-in;
+}
+
+section:hover{
+    transform: scale(1.05);
+}
+
+
+#about-section{
+    padding-top: 1px;
+    background-image: url(image2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align:left;
+    justify-content: flex-start;
+    padding-left: 30px;
+    transition: transform 0.3s ease-in;
+}
+
+#about-section:hover{
+    transform: scale(1.05);
+}
+
+#academics-section{
+    background-image: url(image3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    transition: transform 0.3s ease-in;
+}
+
+#academics-section:hover{
+    transform: scale(1.05);
+}
+
+
+#admission-section{
+    background-image:url(image4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: justify;
+    transition: transform 0.3s ease-in;
+}
+
+#admission-section:hover{
+    transform: scale(1.05);
+}
+
+
+h2{
+    padding-left: 1%;
+}
+
+
+#contact-section{
+
+    background-image:url(image5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    padding-left: 30px;
+    transition: transform 0.3s ease-in;
+
+}
+
+#contact-section:hover{
+    transform: scale(1.05);
+}
+
+#examination-section{
+    font-size: large;
+    margin-top: 10px;
+    font-weight: 100;
+    color: black;
+    padding-left: 30px;
+    text-align: start;
+    justify-content: flex-start;
+    transition: transform 0.3s ease-in;
+}
+
+#examination-section:hover{
+    transform: scale(1.05);
+}
+
+h1{
+    margin-left: 10px;
+    margin-top: 30px;
+
+}
+p{
+    font-size: x-large;
+    margin-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+}
+
+form{
+    padding-bottom: 20px;
+    padding-top: 1%;
+    margin-top: 50px;
+    box-sizing: border-box;
+    margin-left: 45px;
+    margin-right: 50px;
+    font-size: x-large;
+    text-align: center;
+    color: rgb(19, 18, 18);
+    border-radius: 20px;
+    padding-bottom: 20px;
+    transition-duration: 5s;
+    color: white;
+    text-align: left;
+}
+
+
+input[type="text"] {
+    width: 300px;
+    height: 30px;
+    font-size: large;
+}
+
+select {
+    width: 200px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+button{
+    padding: 10px 25px;
+    font-size: 18px;
+}
+
+h3{
+    font-size:x-large ;
+    cursor: pointer;
+    color: rgb(30, 33, 80);
+}
+
+h3:hover{
+    color: rgb(23, 105, 105);
+}
